@@ -28,27 +28,6 @@ An interactive learning platform with AI-powered practice tests, video courses, 
 - TypeScript
 - Wolfram Alpha API
 
-## Deployment
-
-### Frontend (Vercel)
-
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com) and import your repository
-3. Set the root directory to `client`
-4. Add environment variable:
-   - `VITE_API_URL` = Your backend URL (e.g., `https://your-backend.railway.app`)
-5. Deploy!
-
-### Backend (Railway/Render)
-
-1. Create a new project on [Railway](https://railway.app) or [Render](https://render.com)
-2. Connect your GitHub repository
-3. Set the root directory to `server`
-4. Add environment variables:
-   - `WOLFRAM_APP_ID` = Your Wolfram Alpha App ID
-   - `PORT` = 3000
-5. Deploy!
-
 ## Local Development
 
 ### Prerequisites
