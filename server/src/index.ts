@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import axios from 'axios';
-import { promises as fs } from 'fs';
 import path from 'path';
 import { COURSES, PRACTICE_TESTS, Question, Quiz } from './data';
 
@@ -125,21 +124,20 @@ app.get('/api/practice/:subject', async (req, res) => {
 
 // --- Results Endpoints ---
 
-const RESULTS_FILE = path.join(__dirname, 'results.json');
+// --- Results Endpoints ---
+
+// In-memory storage for Vercel (since filesystem is read-only)
+const resultsStore: any[] = [];
 
 // Helper to read results
 async function readResults(): Promise<any[]> {
-    try {
-        const data = await fs.readFile(RESULTS_FILE, 'utf8');
-        return JSON.parse(data);
-    } catch (err) {
-        return [];
-    }
+    return resultsStore;
 }
 
 // Helper to write results
 async function writeResults(results: any[]): Promise<void> {
-    await fs.writeFile(RESULTS_FILE, JSON.stringify(results, null, 2));
+    // No-op for in-memory
+    return;
 }
 
 app.get('/api/results', async (req, res) => {
@@ -188,19 +186,17 @@ app.get('/api/stats/:userId', async (req, res) => {
 });
 
 // --- Progress Tracking ---
-const PROGRESS_FILE = path.join(__dirname, 'progress.json');
+// --- Progress Tracking ---
+// In-memory storage for Vercel
+const progressStore: any[] = [];
 
 async function readProgress(): Promise<any[]> {
-    try {
-        const data = await fs.readFile(PROGRESS_FILE, 'utf8');
-        return JSON.parse(data);
-    } catch (err) {
-        return [];
-    }
+    return progressStore;
 }
 
 async function writeProgress(progress: any[]): Promise<void> {
-    await fs.writeFile(PROGRESS_FILE, JSON.stringify(progress, null, 2));
+    // No-op for in-memory
+    return;
 }
 
 app.post('/api/progress', async (req, res) => {
