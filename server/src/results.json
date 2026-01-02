@@ -1,0 +1,157 @@
+[
+  {
+    "userId": "u1",
+    "subject": "math",
+    "score": 4,
+    "totalQuestions": 20,
+    "categoryBreakdown": {
+      "Math: Algebra": {
+        "total": 14,
+        "correct": 3
+      },
+      "Math: Calculus": {
+        "total": 6,
+        "correct": 1
+      }
+    },
+    "timestamp": "2025-12-27T02:14:02.044Z"
+  },
+  {
+    "userId": "u1",
+    "subject": "science",
+    "score": 1,
+    "totalQuestions": 10,
+    "categoryBreakdown": {
+      "Science: Chemistry": {
+        "total": 3,
+        "correct": 0
+      },
+      "Science: Biology": {
+        "total": 3,
+        "correct": 0
+      },
+      "Science: Physics": {
+        "total": 4,
+        "correct": 1
+      }
+    },
+    "timestamp": "2025-12-27T02:21:50.727Z"
+  },
+  {
+    "userId": "u1",
+    "subject": "computing",
+    "score": 3,
+    "totalQuestions": 10,
+    "categoryBreakdown": {
+      "Computing: Databases": {
+        "total": 1,
+        "correct": 0
+      },
+      "Computing: Algorithms": {
+        "total": 2,
+        "correct": 1
+      },
+      "Computing: Hardware": {
+        "total": 1,
+        "correct": 0
+      },
+      "Computing: Networking": {
+        "total": 2,
+        "correct": 1
+      },
+      "Computing: OS": {
+        "total": 2,
+        "correct": 1
+      },
+      "Computing: Data Structures": {
+        "total": 1,
+        "correct": 0
+      },
+      "Computing: OOP": {
+        "total": 1,
+        "correct": 0
+      }
+    },
+    "timestamp": "2025-12-27T02:25:27.214Z"
+  },
+  {
+    "userId": "u1",
+    "subject": "math",
+    "score": 6,
+    "totalQuestions": 20,
+    "categoryBreakdown": {
+      "Math: Calculus": {
+        "total": 13,
+        "correct": 3
+      },
+      "Math: Algebra": {
+        "total": 7,
+        "correct": 3
+      }
+    },
+    "timestamp": "2025-12-27T02:32:01.092Z"
+  },
+  {
+    "userId": "u1766804920897",
+    "subject": "computing",
+    "score": 0,
+    "totalQuestions": 10,
+    "categoryBreakdown": {
+      "Computing: Networking": {
+        "total": 2,
+        "correct": 0
+      },
+      "Computing: Data Structures": {
+        "total": 1,
+        "correct": 0
+      },
+      "Computing: Databases": {
+        "total": 1,
+        "correct": 0
+      },
+      "Computing: Algorithms": {
+        "total": 2,
+        "correct": 0
+      },
+      "Computing: OS": {
+        "total": 2,
+        "correct": 0
+      },
+      "Computing: Hardware": {
+        "total": 1,
+        "correct": 0
+      },
+      "Computing: OOP": {
+        "total": 1,
+        "correct": 0
+      }
+    },
+    "timestamp": "2025-12-27T03:09:09.896Z"
+  },
+  {
+    "userId": "u1766804920897",
+    "subject": "math",
+    "score": 0,
+    "totalQuestions": 4,
+    "categoryBreakdown": {
+      "Math: Calculus": {
+        "total": 4,
+        "correct": 0
+      }
+    },
+    "timestamp": "2026-01-02T21:53:24.018Z"
+  },
+  {
+    "userId": "u1766804920897",
+    "subject": "math",
+    "score": 0,
+    "totalQuestions": 5,
+    "categoryBreakdown": {
+      "Math: Calculus": {
+        "total": 5,
+        "correct": 0
+      }
+    },
+    "timestamp": "2026-01-02T21:59:22.345Z"
+  }
+]
