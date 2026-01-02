@@ -259,6 +259,12 @@ app.get('/api/flashcards/:subject', (req, res) => {
 });
 
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+// Only start the server if running locally (not on Vercel)
+if (process.env.VERCEL !== '1') {
+    app.listen(port, () => {
+        console.log(`Server running at http://localhost:${port}`);
+    });
+}
+
+// Export for Vercel serverless
+export default app;
