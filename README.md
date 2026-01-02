@@ -1,4 +1,4 @@
-# Cortex - AI-Powered Learning Platform 🧠
+# Cortex - AI-Powered Learning Platform 
 
 An interactive learning platform with AI-powered practice tests, video courses, flashcards, and gamification features.
 
@@ -6,12 +6,12 @@ An interactive learning platform with AI-powered practice tests, video courses, 
 
 ## Features
 
-- 📚 **Video Courses** - Watch educational videos on Math, Science, Computing, and Economics
-- 🧪 **AI Practice Tests** - Wolfram Alpha-powered math problems with step-by-step solutions
-- 🃏 **Flashcards** - Study with interactive flashcards
-- 🎮 **Gamification** - Streaks, badges, points, and confetti celebrations
-- 🔍 **Search** - Find courses and videos quickly
-- 📊 **Progress Tracking** - Track your learning journey
+- **Video Courses** - Watch educational videos on Math, Science, Computing, and Economics
+- **AI Practice Tests** - Wolfram Alpha-powered math problems with step-by-step solutions
+- **Flashcards** - Study with interactive flashcards
+- **Gamification** - Streaks, badges, points, and confetti celebrations
+- **Search** - Find courses and videos quickly
+- **Progress Tracking** - Track your learning journey
 
 ## Tech Stack
 
