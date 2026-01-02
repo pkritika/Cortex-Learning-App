@@ -7,10 +7,11 @@ import path from 'path';
 import { COURSES, PRACTICE_TESTS, Question, Quiz } from './data';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
+// Allow all origins for Vercel deployment
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+    origin: true,
     credentials: true
 }));
 app.use(express.json());
