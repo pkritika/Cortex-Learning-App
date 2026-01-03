@@ -10,8 +10,8 @@ const port = process.env.PORT || 3000;
 
 // Allow all origins for Vercel deployment
 app.use(cors({
-    origin: true,
-    credentials: true
+    origin: '*',
+    credentials: false
 }));
 app.use(express.json());
 
