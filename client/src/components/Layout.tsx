@@ -19,7 +19,7 @@ export const Layout = () => {
 
     useEffect(() => {
         // Fetch courses for search
-        fetch('${API_URL}/api/courses')
+        fetch(`${API_URL}/api/courses`)
             .then(res => res.json())
             .then(data => setCourses(data))
             .catch(err => console.error("Failed to fetch courses", err));

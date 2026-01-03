@@ -36,7 +36,7 @@ export const CoursePage: React.FC = () => {
 
         // Save progress
         if (user && id) {
-            fetch('${API_URL}/api/progress', {
+            fetch(`${API_URL}/api/progress`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

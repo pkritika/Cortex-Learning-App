@@ -15,7 +15,7 @@ export const Home: React.FC = () => {
 
     useEffect(() => {
         const fetchData = () => {
-            const fetchCourses = fetch('${API_URL}/api/courses').then(res => res.json());
+            const fetchCourses = fetch(`${API_URL}/api/courses`).then(res => res.json());
 
             let fetchStats = Promise.resolve(null);
             let fetchProgress = Promise.resolve(null);
